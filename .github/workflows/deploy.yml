@@ -1,0 +1,21 @@
+name: deploy
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20]
+    name: Conkel Source Version ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v3
+        env:
+            CI: false
+      - run: npm install -g surge
+      - run: cd build && surge . ${{ secrets.LOGIN }} --token ${{ secrets.TOKEN }}
+
