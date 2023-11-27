@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://temp-cp.netlify.app/assets/css/gsap.css" />
+
+    <!-- ===== MATERIAL ICONS =====-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===== FAVICON =====-->
+    <link rel="shortcut icon" href="https://temp-cp.netlify.app/favicon.ico" type="image/x-icon" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+    <title>
+    Conkel
+    </title>
+  </head>
+  <body>
+    <!-- ===== HEADER SECTION =====-->
+    <header class="flex-center header">
+      <nav class="flex-center nav">
+        <div class="flex-center nav-logo">
+          <h3>Conkel Hub</h3>
+        </div>
+
+        <ul class="flex-center nav-links">
+          <li class="nl nl-active"><a href="index.html#hero">Home</a></li>
+          <li class="nl"><a href="index.html#about">Our Story</a></li>
+          <li class="nl"><a href="index.html#services">Programs</a></li>
+          <li class="nl"><a href="index.html#faq">FAQs</a></li>
+          <li class="nl"><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <button class="nav-btn" onclick="toggleModal()">Get Started</button>
+
+        <span class="material-symbols-outlined" id="nm-open" onclick="toggleMenu()"> menu </span>
+
+        <div class="nav-menu">
+          <span class="material-symbols-outlined" id="nm-close" onclick="toggleMenu()"> close </span>
+
+          <div class="flex-center nm-logo">
+            <h3>LoremIpsum.</h3>
+          </div>
+
+          <div class="flex-center flex-col nm-links">
+            <h4>Navigation</h4>
+
+            <ul>
+              <li class="nml"><a href="index.html#hero">Home</a></li>
+              <li class="nml"><a href="index.html#about">Our Story</a></li>
+              <li class="nml"><a href="index.html#services">Programs</a></li>
+              <li class="nml"><a href="index.html#faq">FAQs</a></li>
+              <li class="nml"><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col nm-socials">
+            <h4>Socials</h4>
+
+            <ul>
+              <li class="nms">
+                <a href="index.html">LinkedIn</a>
+              </li>
+              <li class="nms">
+                <a href="index.html">Facebook</a>
+              </li>
+              <li class="nms">
+                <a href="index.html">Twitter</i></a>
+              </li>
+              <li class="nms">
+                <a href="index.html">Instagram</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO SECTION =====-->
+      <section class="flex-center hero" id="hero">
+        <div class="flex-center h-container">
+          <div class="flex-center flex-col hc-text">
+            <h1 data-aos="fade-left">
+              It's now easier to learn a <span>Tech skill  <img src="assets/img/title-underline.svg" alt="" /></span>
+              
+            </h1>
+            <p data-aos="fade-left" data-aos-delay="300">
+              * Supportive Learning Community <br>
+              * Engaging Learning Experience and Convenience <br>  &nbsp;                 and Flexibility <br>
+              * Expert Instructors
+
+            </p>
+
+            <div
+              class="flex-center hct-tags"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <p>
+                <span class="material-symbols-outlined"> block </span> No
+                interest
+              </p>
+
+              <p>
+                <span class="material-symbols-outlined"> block </span> No late
+                fees
+              </p>
+
+              <p>
+                <span class="material-symbols-outlined"> block </span> No credit
+                checks
+              </p>
+            </div>
+
+            <div class="flex-center hct-form">
+              <input
+                type="text"
+                name="email"
+                id="user-email"
+                placeholder="Type your email"
+                autocomplete="on"
+                required
+                data-aos="fade-left"
+                data-aos-delay="500"
+              />
+              <button
+                class="hctf-btn"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-center hc-img">
+            <div class="hci-bck" data-aos="fade-up" data-aos-delay="600">
+              <img
+                src="assets/img/h-img-2.png"
+                alt="female student holding some books"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PARTNER SECTION =====-->
+      <section class="flex-center partner" id="partner">
+        <div class="flex-center flex-col p-container">
+          <h3 data-aos="fade-down" data-aos-delay="400">"Empowering Future Innovators with Tech Education"</h3>
+          <!-- <p data-aos="fade-down" data-aos-delay="500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem
+            quos assumenda!
+          </p> -->
+          <img
+            src="assets/img/logoipsum.svg"
+            alt="logo"
+            loading="lazy"
+            data-aos="fade-down"
+            data-aos-delay="600"
+          />
+        </div>
+      </section>
+
+      <!-- ===== ABOUT SECTION =====-->
+      <section class="flex-center about" id="about">
+        <div class="flex-center flex-col a-container" data-aos="fade-up" id="section">
+          <div class="flex-center a-title">
+            <span data-aos="fade-left" data-aos-delay="300"
+              >Empowering Solution providers for the world
+              Tech Education for Trailblazers of Tomorrow
+              </span
+            >
+            <h3 data-aos="fade-right" data-aos-delay="400">
+              Welcome to CONKEL HUB!
+            </h3>
+          </div>
+
+          <div class="flex-center a-content">
+            <div
+              class="flex-center ac-img"
+              data-aos="fade-left"
+              data-aos-delay="500"
+              id=""
+            >
+              <img src="assets/img/ac-1.jpg" alt="" loading="lazy" />
+            </div>
+
+            <div class="flex-center flex-col ac-text" data-simplebar id="overflow">
+            
+              <p data-aos="fade-right" data-aos-delay="600">
+                At Conkel Hub, we believe that
+                learning should be accessible, flexible, and tailored to your needs. We are an innovative online learning platform that empowers individuals to enhance their tech skills at their own pace and convenience. Whether you're a beginner looking to explore the world of technology or an experienced professional aiming to stay ahead in your field, ULearn provides the tools and resources you need to succeed.
+               
+              </p>
+          
+              <h3 data-aos="fade-left" data-aos-delay="200">
+                Why Choose Us?
+
+              </h3>
+              <p data-aos="fade-right" data-aos-delay="700">
+                <span class="bold">Convenience and Flexibility: </span>With Conkel Hub, you have the freedom to learn anytime, anywhere. No matter if you're a working professional or a busy student, our platform allows you to access high-quality learning materials and courses from the comfort of your home or on-the-go. Take control of your learning journey and study at your own pace.
+              </p>
+              <p data-aos="fade-right" data-aos-delay="700">
+                <span class="bold">Diverse Range of Tech Skills: </span>
+                 Conkel Hub offers a comprehensive selection of courses covering various None-code tech skills and disciplines. From  Product Design, Data Analysis, Business Analysis and Product Management. Expand your knowledge and gain the skills needed to thrive in the rapidly evolving tech industry.
+              </p>
+              <p  data-aos-delay="700">
+                <span class="bold">Engaging Learning Experience: </span>
+                 Learning should be enjoyable, interactive, and engaging. That's why we prioritise providing a seamless and immersive learning experience. Our courses feature a combination of video lectures, practical exercises, quizzes, and hands-on projects, allowing you to apply what you've learned and build a portfolio of real-world projects.
+              </p>
+              <p  data-aos-delay="700">
+                <span class="bold"> Expert Instructors: </span>
+               Our courses are created and delivered by industry professionals and subject matter experts who have extensive experience in their respective fields. You can learn from the best as they guide you through each lesson, share valuable insights, and provide practical tips to help you grasp complex concepts more effectively.
+              </p>
+              <p  data-aos-delay="700">
+                <span class="bold">   Supportive Learning Community: </span>
+               Learning is not just about studying in isolation; it's about being part of a community. At Conkel Hub, you'll have the opportunity to connect with fellow learners through discussion forums, peer-to-peer collaboration, and networking events. Share your ideas, seek help, and gain inspiration from a supportive community of like-minded individuals.
+              </p>
+              <p  data-aos-delay="700">
+                <span class="bold">   Continuous Learning and Progress Tracking: </span>
+               We believe in lifelong learning, and our platform is designed to support your continuous growth. Track your progress, earn certificates upon course completion, and showcase your achievements to employers or clients. Stay updated with the latest industry trends and ensure you're always equipped with the skills in high demand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TARGET SECTION =====-->
+      <section class="flex-center target" id="target">
+        <div class="flex-center flex-col t-container">
+          <div class="flex-center flex-col t-title">
+            <span data-aos="fade-down">How does this work for You?</span>
+            <h3 data-aos="fade-down" data-aos-delay="300">
+              We've Got You Covered!
+            </h3>
+            <!-- <span></span> -->
+            <p data-aos="fade-down" data-aos-delay="400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque a
+              corrupti nihil iure. Veniam esse nisi alias laborum placeat iure
+              reprehenderit assumenda illo excepturi porro.
+            </p>
+          </div>
+
+          <div class="flex-center t-cards">
+            <div
+              class="flex-center flex-col tc"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="tc-overlay"></div>
+
+              <div class="flex-center flex-col tc-title">
+                <h4>Supportive Learning Community</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Exercitationem temporibus.
+                </p>
+              </div>
+
+              <div class="flex-center tc-footer">
+                <button class="tcf-btn" onclick="toggleModal()">Get Started!</button>
+                <span class="material-symbols-outlined" id="tc-arrow">
+                  arrow_outward
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="flex-center flex-col tc"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="tc-overlay"></div>
+
+              <div class="flex-center flex-col tc-title">
+                <h4>Engaging Learning Experience and Convenience and Flexibility </h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Exercitationem temporibus.
+                </p>
+              </div>
+
+              <div class="flex-center tc-footer">
+                <button class="tcf-btn" onclick="toggleModal()">Get Started!</button>
+                <span class="material-symbols-outlined" id="tc-arrow">
+                  arrow_outward
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="flex-center flex-col tc"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="tc-overlay"></div>
+
+              <div class="flex-center flex-col tc-title">
+                <h4>Expert Instructors</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Exercitationem temporibus.
+                </p>
+              </div>
+
+              <div class="flex-center tc-footer">
+                <button class="tcf-btn" onclick="toggleModal()">Get Started!</button>
+                <span class="material-symbols-outlined" id="tc-arrow">
+                  arrow_outward
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SERVICES SECTION =====-->
+      <section class="flex-center services" id="services">
+        <div class="flex-center s-container">
+          <div class="s-cards">
+            <div
+              class="flex-center flex-col sc sc-active"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <h4>Product Management</h4>
+              <p>
+                Learn how to strategize, develop, and launch successful products. Explore techniques for market research, product development, and customer-focused decision-making.
+                Relevance: In today's fast-paced business landscape, effective product management is crucial for innovation and staying competitive.
+                
+              </p>
+              <button onclick="toggleModal()">Pick Me</button>
+            </div>
+
+            <div
+              class="flex-center flex-col sc"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <h4>Product Design (UI/UX)</h4>
+              <p>
+                Dive into user interface (UI) and user experience (UX) design principles. Create intuitive and visually appealing digital products that delight users.
+                Relevance: With the growth of digital platforms and user-centric design, UI/UX skills are in high demand for creating user-friendly websites and apps.
+                
+              </p>
+              <button onclick="toggleModal()">Pick Me</button>
+            </div>
+
+            <div class="flex-center flex-col sc" data-aos="fade-up">
+              <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <h4>Business Analysis</h4>
+              <p>
+                Master the skills to analyse business processes, identify opportunities for improvement, and recommend solutions. Learn to bridge the gap between business needs and technology solutions.
+                Relevance: Businesses rely on data-driven decisions, making business analysts essential for optimising processes and achieving efficiency.
+                
+              </p>
+              <button onclick="toggleModal()">Pick Me</button>
+            </div>
+            <div class="flex-center flex-col sc" data-aos="fade-up">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <h4>Data Analysis</h4>
+              <p>
+                Acquire the expertise to collect, analyse, and interpret data to make informed decisions. Explore statistical tools and data visualisation techniques.
+                Relevance: In the era of big data, data analysts play a pivotal role in extracting valuable insights to guide business strategies and decision-making.
+                
+                
+              </p>
+              <button onclick="toggleModal()">Pick Me</button>
+            </div>
+          </div>
+
+          <div class="flex-center flex-col s-content">
+            <span>Choose the program that's right for you</span>
+            <h3 data-aos="fade-left">
+              Our Programs are 100% structured and designed with
+              <span>YOU</span> in mind.
+            </h3>
+
+            <div
+              class="flex-center flex-col sc-tags"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="sct sct-active"><p>Product Management</p></div>
+              <div class="sct"><p>Product Design (UI/UX)</p></div>
+              <div class="sct"><p>Business Analysis</p></div>
+              <div class="sct"><p>Data Analysis</p></div>
+            </div>
+
+            <img
+              src="assets/img/service-arrow.png"
+              alt="arrow"
+              loading="lazy"
+              class="service-arrow"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WHY SECTION =====-->
+      <section class="flex-center why" id="why">
+        <div class="flex-center flex-col w-container">
+          <div class="flex-center flex-col w-title">
+            <span>How we started</span>
+
+            <div class="flex-center wt">
+              <h3 data-aos="fade-right">
+                Our Story
+              </h3>
+              <div class="flex-col flex-center">
+     <p data-aos="fade-left" data-aos-delay="300">
+                In the heart of innovation, where opportunities and dreams intersect, ConKel Hub was born. Our journey began with a profound vision and a driving passion to transform individuals to skilled talents in Africa and in general improve the education landscape.
+              </p>
+       <br>
+       <h2 class="text-left">Why We Started</h2>
+              <p>
+                Africa is a continent brimming with talent and potential. However, the persistent challenge of a lack of qualified technical expertise is a hurdle that couldn't be ignored.      <br>     <br>It became clear that a gap existed between the immense potential of African youth and the global opportunities available to them. This gap sparked the inception of ConKel Hub.
+
+Our founders recognised the need to empower young Africans with high-quality technical education. 
+<br>     <br>They believed that knowledge should be accessible to all, regardless of geographical boundaries or socioeconomic backgrounds. This belief fueled their determination to start a company to bridge this gap and empower African students to excel in technology.
+
+              </p>
+              <h2 class="text-left">How we plan to Bridge the gap</h2>
+              <p>At ConKel Hub, we are committed to redefining the ed-tech landscape in Africa. Our mission is clear: to provide accessible, affordable, and high-quality technical education to aspiring learners across the continent. We've harnessed the power of technology to make education available at your fingertips.</p>
+              
+              <h2 class="text-left">Our approach is built on three pillars:</h2> 
+
+<p><span class="bold">Quality Content:</span>   We curate and create content at par with global standards. Our courses are designed to equip students with the skills and knowledge they need to thrive in the tech industry. </p>
+              
+<br> 
+<p><span class="bold">Accessibility:</span>   We believe education should not be limited by geography. That's why our platform is accessible to students from all over Africa. You only need an internet connection to unlock a world of opportunities.</p>
+  <br>
+  <p><span class="bold">Community:</span>  Learning is not a solitary endeavour and is best enjoyed together. We foster a community of learners and mentors, providing a support network that guides students through their educational journey.</p>
+  
+  <br><br>
+  <p>Join us in this incredible journey of learning, growth, and transformation. Together, we can bridge the gap, empower the future, and redefine what's possible for Africa.</p>
+              
+              
+
+              </div>
+         
+            </div>
+            
+          </div>
+
+          <div class="flex-center w-cards">
+            <div
+              class="flex-center flex-col wc"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <span class="material-symbols-outlined"> terminal </span>
+              <h4>First Reason</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus minus maxime voluptates facere fugit impedit earum ab
+                ea error est?
+              </p>
+            </div>
+
+            <div
+              class="flex-center flex-col wc"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <span class="material-symbols-outlined"> terminal </span>
+              <h4>First Reason</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus minus maxime voluptates facere fugit impedit earum ab
+                ea error est?
+              </p>
+            </div>
+
+            <div
+              class="flex-center flex-col wc"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <span class="material-symbols-outlined"> terminal </span>
+              <h4>First Reason</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus minus maxime voluptates facere fugit impedit earum ab
+                ea error est?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA SECTION =====-->
+      <section class="flex-center cta" id="cta">
+        <div class="flex-center cta-container">
+          <div class="flex-center flex-col ctac" data-aos="fade-up">
+            <h3 data-aos="fade-up" data-aos-delay="300">Improved Doloribus.</h3>
+            <h3 data-aos="fade-up" data-aos-delay="400">Accelerated Earum.</h3>
+            <p data-aos="fade-up" data-aos-delay="500">
+              15-day free trial. No credit card required.
+            </p>
+
+            <div class="flex-center ctac-btn">
+              <button
+                class="cta-btn-pri"
+                data-aos="fade-right"
+                data-aos-delay="600"
+                onclick="toggleModal()"
+              >
+                Try for FREE
+              </button>
+              <button
+                class="cta-btn-sec"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <a href="index.html#contact">Contact Us</a>
+                <span class="material-symbols-outlined"> trending_flat </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ SECTION =====-->
+      <section class="flex-center faq" id="faq">
+        <div class="flex-center faq-container">
+          <div class="flex-center flex-col faq-title">
+            <span data-aos="fade-left">Support</span>
+            <h3 data-aos="fade-left" data-aos-delay="300">FAQs</h3>
+            <p data-aos="fade-left" data-aos-delay="400">
+              Everything you need to know about us and our programs. Can't find
+              the answer you are looking for? Kindly <a href="index.html">contact us</a>
+            </p>
+            <lord-icon
+              src="https://cdn.lordicon.com/zpxybbhl.json"
+              trigger="loop"
+              delay="2000"
+              colors="primary:#00509d,secondary:#ffd60a"
+              class="faq-icon"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+            </lord-icon>
+          </div>
+
+          <div class="flex-center flex-col faq-cards">
+            <div
+              class="flex-center flex-col fqc"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="flex-center fqc-title">
+                <h4>Is there a free trial available?</h4>
+                <span class="material-symbols-outlined" id="fqc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center flex-col fqc-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos laboriosam quam dolores sed tempore architecto
+                  odit sit beatae, sint ad culpa sequi, voluptates amet fugit
+                  numquam veritatis repudiandae itaque dolore?
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex-center flex-col fqc"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="flex-center fqc-title">
+                <h4>Is there a free trial available?</h4>
+                <span class="material-symbols-outlined" id="fqc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center flex-col fqc-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos laboriosam quam dolores sed tempore architecto
+                  odit sit beatae, sint ad culpa sequi, voluptates amet fugit
+                  numquam veritatis repudiandae itaque dolore?
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex-center flex-col fqc"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="flex-center fqc-title">
+                <h4>Is there a free trial available?</h4>
+                <span class="material-symbols-outlined" id="fqc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center flex-col fqc-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos laboriosam quam dolores sed tempore architecto
+                  odit sit beatae, sint ad culpa sequi, voluptates amet fugit
+                  numquam veritatis repudiandae itaque dolore?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION =====-->
+      <section class="flex-center contact" id="contact">
+        <div class="flex-center flex-col c-container">
+          <div class="flex-center flex-col c-title">
+            <span data-aos="fade-down">Support</span>
+            <h3 data-aos="fade-down" data-aos-delay="300">
+              How May We Be Of Service?
+            </h3>
+            <p data-aos="fade-down" data-aos-delay="400">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="flex-center c-cards">
+            <div
+              class="flex-center flex-col cc-content"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <span class="material-symbols-outlined" id="contact-icon">
+                help
+              </span>
+              <h4>Customer Support</h4>
+
+              <div class="flex-center ccc-email">
+                <span class="material-symbols-outlined"> contact_mail </span>
+
+                <p>username@email.com | username@email.com</p>
+              </div>
+
+              <div class="flex-center ccc-mobile">
+                <span class="material-symbols-outlined"> call </span>
+
+                <p>+000 0000 0000 | +000 0000 0000</p>
+              </div>
+
+              <ul class="flex-center ccc-socials">
+                <li class="cccs">
+                  <a href="index.html"><i class="bx bxl-facebook"></i></a>
+                </li>
+                <li class="cccs">
+                  <a href="index.html"><i class="bx bxl-twitter"></i></a>
+                </li>
+                <li class="cccs">
+                  <a href="index.html"><i class="bx bxl-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="flex-center cc-map"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126845.96932379008!2d3.281128021059387!3d6.529699310745521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9228fa2a3999%3A0xd7a8324bddbba1f0!2sIkeja%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2srw!4v1686819266745!5m2!1sen!2srw"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <!-- ===== REGISTER MODAL SECTION =====-->
+    <section class="flex-center modal">
+      <div class="flex-center flex-col m-container">
+        <span class="material-symbols-outlined" id="m-close" onclick="toggleModal()">
+          close
+          </span>
+
+        <div class="bf-title">
+          <h3 data-aos="fade-up">
+            Ready to <span>begin</span>? <br />
+            Fill up the form below and let's get started!
+          </h3>
+        </div>
+
+        <div class="bf-form" data-aos="fade-up" data-aos-delay="300">
+          <form action="index.html">
+            <div class="bff-input">
+              <label for="">Name</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your full name"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-input">
+              <label for="">Contact Number*</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your mobile number"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-input">
+              <label for="">Email Address*</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Share your email address"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-input">
+              <label for="">Country Of Residence*</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="e.g. Nigeria, Lagos"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-select">
+              <label for="">Select Desired Program*</label>
+              <select name="company-size" id="company-size">
+                <option value="">Please Select</option>
+                <option value="">Option One</option>
+                <option value="">Option Two</option>
+                <option value="">Option Three</option>
+              </select>
+            </div>
+
+            <div class="bff-input">
+              <label for="">Industry</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your current industry"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-input">
+              <label for="">Current Job Role*</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your current job role"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <div class="bff-select">
+              <label for="">What are you looking to do*</label>
+              <select name="inquiry-objective" id="inquiry-objective">
+                <option value="">Please Select</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+            </div>
+
+            <div class="bff-terms">
+              <p>
+                By submitting, you consent to LoremIpsum's collecting, using,
+                disclosing and otherwise processing the provided information
+                to facilitate your better understanding of the LoremIpsum
+                Business services (including sending you relevant offers,
+                promotions, newsletters and other marketing communications,
+                and contacting you to share more about the services),
+                conducting relevant market analysis and related administrative
+                matters in accordance with LoremIpsum's Privacy Notice.
+              </p>
+            </div>
+
+            <div class="bff-btn">
+              <button>Submit Registration</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION =====-->
+    <footer class="flex-center footer">
+      <div class="flex-center flex-col f-container">
+        <div class="flex-center fc">
+          <div class="flex-center flex-col fc-title">
+            <h3>LoremIpsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus odit, ut et magni laboriosam veritatis
+            </p>
+
+            <ul class="flex-center fc-socials">
+              <li class="fcs">
+                <a href="index.html"><i class="bx bxl-facebook"></i></a>
+              </li>
+              <li class="fcs">
+                <a href="index.html"><i class="bx bxl-twitter"></i></a>
+              </li>
+              <li class="fcs">
+                <a href="index.html"><i class="bx bxl-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col fc-links">
+            <h3>Popular Programs</h3>
+            <ul>
+              <li class="fcl"><a href="index.html">Product Management</a></li>
+              <li class="fcl"><a href="index.html">Product Design (UI/UX)</a></li>
+              <li class="fcl"><a href="index.html">Data Analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col fc-news">
+            <h3>Newsletter</h3>
+            <input
+              type="text"
+              name=""
+              id=""
+              autocomplete="on"
+              placeholder="Your e-mail address"
+              required
+            />
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <div class="fc-border"></div>
+
+        <div class="flex-center fc-mini">
+          <div class="flex-center fcm-brand">
+            <p>2023 LoremIpsum. All Rights Reserved</p>
+          </div>
+          <div class="flex-center fcm-links">
+            <a href="index.html">Terms & Conditions</a> <a href="index.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <!-- ===== SCROLL TOP =====-->
+  <a href="index.html#" class="scrollup" id="scroll-up">
+    <span class="material-symbols-outlined scrollup-icon">
+      arrow_upward
+      </span>
+  </a>
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      window.addEventListener("load", AOS.refresh);
+      ("");
+    </script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  </body>
+</html>
